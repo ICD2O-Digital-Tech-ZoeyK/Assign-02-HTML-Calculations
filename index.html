@@ -1,9 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="description" content="My First Website">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Zoey Kariyal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Favicon/site.webmanifest">
+
+    <!-- MDL -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <p>Paragraph</p>
+    <h1>Currency Converter</h1>
+
+    <center><img src="images/currency-exchange.png" alt="Currency symbols" width="100"></center>
+
+    <p>Convert CAD to USD, AUD, and EUR</p>
+
+    <p class="info-text">
+      This tool converts Canadian Dollars to three major currencies. It's useful for travelers, online shoppers, or anyone interested in currency values!
+    </p>
+
+    <div class="converter">
+      <form method="POST" action="php/calculations.php">
+        <label for="amount">Amount (in CAD):</label>
+        <input type="number" id="amount" name="amount" step="0.01" min="0" placeholder="Enter amount in CAD" required>
+
+        <div class="currency-options">
+          <input type="radio" id="usd" name="currency" value="USD" checked>
+          <label for="usd">US Dollar (USD)</label><br>
+
+          <input type="radio" id="aud" name="currency" value="AUD">
+          <label for="aud">Australian Dollar (AUD)</label><br>
+
+          <input type="radio" id="eur" name="currency" value="EUR">
+          <label for="eur">Euro (EUR)</label>
+        </div>
+
+        <!-- MDL Button -->
+        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+          Convert
+        </button>
+      </form>
+    </div>
   </body>
 </html>
+

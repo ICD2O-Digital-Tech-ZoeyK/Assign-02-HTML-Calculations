@@ -1,4 +1,59 @@
 /* Created by: Mr. Coxall
-* Created on: Sep 2020
-* This file contains the CSS for index.html
-*/
+ * Created on: Sep 2020
+ * This file contains the CSS for index.html
+ */
+body {
+    background-color: lavender;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a237e;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.info-text {
+    color: hsl(210, 70%, 40%);
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.converter {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+input[type="number"] {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.currency-options {
+    margin: 10px 0;
+}
+
+button {
+    margin: 10px 0;
+    width: 100%;
+}
+
+#result {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+}
